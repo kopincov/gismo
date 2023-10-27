@@ -1,0 +1,72 @@
+#=================== optimization settings ========================================================
+size_of_population = 10
+# pocet cyklu - kazdy obsahuje number_of_generations generaci. Restartu je tedy number_of_cycles - 1
+number_of_cycles = 2
+# pocet generaci v kazdem cyklu
+number_of_generations = 2
+IpOpt = false
+lofted_efficiency = true
+number_of_threads = 10
+weightLift = 0.2 
+weightVelocity = 0.1
+weightPressure = 0.2
+weightEfficiency = 0.5
+# true - rychlostni cast cilove funkce jako rozdil prumeru tangencialnich rychlosti, false - integral rozdilu od prumeru
+velocity_by_average = true
+#=================== turbine settings =============================================================
+# uvažovaná otevření - názvy pro ukládání dat musi souhlasi s nazvy pripon nize (opt, max, ...). Podle jejich poctu se pozna, kolik otevreni se uvazuje.
+name_of_open = opt, max
+# polomery uvazovanych profilu
+radius_of_profiles = 0.175, 0.229, 0.283, 0.338, 0.392, 0.446, 0.5
+viscosity = 1e-5
+turbulence_intensity = 0.05     
+#=================== solver settings ==============================================================
+# pokud obsahuje hodnoty (init, middle1, midle2, ... , final), probehne pouze vykresleni reseni v danych stavech! Vypocet optimalizace probiha pouze neobsahuje-li tento parametr zadnou hodnotu
+draw_solution =
+# true - nacteni predchoziho reseni na pocatecnim profilu, false - vypocet od "nuly" pro pocatecni profil a jeho ulozeni pro budouci starty
+load_solution = false
+time_step = 1e-3
+tolerance_relative_error_of_steadyNS_solution = 1e-5
+tolerance_relative_error_of_RANS_solution = 1e-3
+tolerance_relative_error_of_objective_function = 1e-4 
+# minimalni pocet iteraci i pro ustalene reseni
+minimum_number_of_iterations = 5;
+# pocet iteraci stacionarnich NS
+number_of_iterations_steadyNS = 20
+# pocet iteraci k-omega pro stac. NS
+number_of_iterations_kOmegaSteady = 20
+# pocet iteraci pro reseni ze stacionarniho stokese
+number_of_iterations_start = 300
+# pocet iteraci pro reseni z predchoziho kroku optimalizace
+number_of_iterations_optimization = 130
+# pocet iteraci pro vypocet gradientu
+number_of_iterations_gradient = 80
+# síť - volby 7000Dofs, 17000Dofs
+grid = 7000Dofs
+# turbulentní model - volby koSST, koWilcoxLRN
+turbulence_model = koSST 
+#=================== optimal ======================================================================
+viscosity_ratio_opt = 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0
+flow_rate_opt = 5.73
+angle_difference_to_optimal_open_opt = 0.0
+input_velocity_x_opt = 7.765004348, 7.765004348, 7.765004348, 7.765004348, 7.765004348, 7.765004348, 7.765004348
+input_velocity_y_opt = -0.28272, 4.30592, 7.93756, 11.0259, 13.6596, 16.0096, 18.1491
+output_velocity_tangential_opt = 9.54812, 12.9525, 14.7303, 16.4207, 18.4973, 20.0181, 21.1636
+uniformity_parameter_opt = 0.01
+#=================== maximal ======================================================================
+viscosity_ratio_max = 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0
+flow_rate_max = 8.7
+angle_difference_to_optimal_open_max = -0.17453292519943298
+input_velocity_x_max = 11.789797178, 11.789797178, 11.789797178, 11.789797178, 11.789797178, 11.789797178, 11.789797178
+input_velocity_y_max = -0.74342, 3.67571, 7.26132, 10.38162, 13.08805, 15.53386, 17.77616
+output_velocity_tangential_max = 10.7819, 12.9285, 14.9803, 15.742, 17.7822, 19.8207, 20.4591
+uniformity_parameter_max = 0.005
+#=================== minimal ======================================================================
+#viscosity_ratio_min = 500.0, 500.0, 500.0, 500.0, 500.0, 500.0, 500.0
+#flow_rate_min = 
+#angle_difference_to_optimal_open_min = 
+#input_velocity_x_min = 
+#input_velocity_y_min = 
+#output_velocity_tangential_min = 
+#uniformity_parameter_min = 
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<Pde type="PoissonPde" dim="2">
+<rhs>-16*cos(2*pi*x)*pi^4 + 64*cos(2*pi*x)*pi^4 *cos(2*pi*y) -16*cos(2*pi*y)*pi^4</rhs>
+</Pde>
+<Function type="FunctionExpr" id="100" dim="2">(1 - cos(2*pi*x))*(1 - cos(2*pi*y))</Function>
+</xml>

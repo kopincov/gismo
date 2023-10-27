@@ -1,0 +1,33 @@
+<xml>
+ <OptionList id="0">
+  <string label="matMp" desc="Pressure mass matrix file name" value=""/>
+  <string label="matMv" desc="Velocity mass matrix file name" value=""/>
+  <string label="matNS" desc="NS matrix file name" value=""/>
+  <string label="matPath" desc="Path to the the matrices (xml files)" value=""/>
+  <string label="ofPath" desc="Path to the output file" value=""/>
+  <string label="solver" desc="Name of linear solver to be used" value="GMRESright"/>
+  <int label="dim" desc="Problem dimension" value="2"/>
+  <int label="maxIt" desc="Maximum number of iterations" value="200"/>
+  <real label="visc" desc="Viscosity" value="0.1"/>
+  <real label="tol" desc="Stopping tolerance" value="1e-10"/>
+
+  <string label="precN.0" desc="Names of preconditioners to be used" value="LSC_AdiagEqual"/>
+  <string label="precN.1" desc="Names of preconditioners to be used" value="SIMPLE_AdiagEqual"/>
+  <string label="precN.2" desc="Names of preconditioners to be used" value="SIMPLER_AdiagEqual"/>
+  <string label="precN.3" desc="Names of preconditioners to be used" value="MSIMPLER_AdiagEqual"/>
+  <string label="precN.4" desc="Names of preconditioners to be used" value="AL_Awhole"/>
+  <string label="precN.5" desc="Names of preconditioners to be used" value="AL_Amod"/>
+  <int label="precN.Size" desc="Number of preconditioners" value="6"/>
+  
+  <int label="prec.maxIt" desc="Max number of iterations for inner solves" value="10"/>
+  <int label="prec.fill" desc="Fill factor for ILUT precond" value="2"/>
+  <real label="prec.tol" desc="Stopping tolerance for inner solves" value="1e-2"/>
+  <real label="prec.dropTol" desc="Drop tolerance for ILUT precond" value="1e-8"/>
+  <real label="prec.gamma" desc="Parameter gamma for AL" value="1"/>
+  <real label="prec.alphaP" desc="Pressure relaxation parameter for SIMPLE-type" value="1.0"/>
+  <bool label="prec.iter" desc="Subsystems iteratively" value="0"/>
+  <bool label="prec.lumpingM" desc="Use lumped diagonal mass matrices in preconditioners" value="0"/>
+  <bool label="prec.lumpingA" desc="Use lumped diagonal blockA in SIMPLE-type preconditioners" value="0"/>
+ </OptionList>
+</xml>
+

@@ -1,0 +1,50 @@
+#======================== Geometry =================================
+dim = 2
+numRefine = 3
+numRefineU = 0
+numRefineLocal = 0
+deg = 1
+numElevate = 0
+elemType = 0
+a = 3
+a_in = 1
+b = 2
+c = 1
+addRefPart = 0.0
+
+#====================== inputs ======================================
+
+outPath = /home/jirieggy/gismoQT/build/LTMG/MG/
+matPath = /home/jirieggy/gismoQT/build/LTMG/matrices/
+domainPath = /home/jirieggy/gismoQT/build/LTMG/domains/
+
+outputFile = MGstep2D_ref3_deg123.csv
+
+#possibleNames for SLAR_end (add .xml)
+possibleNames = blockAmod_0, blockAmod_1, blockAwhole, blockA, MSIMPLER, LSC_tmp, LSC_x, matAP, matFp, matNS, matPresMass, matVelMass, PCD_pMassSolver, PCD_pSolver, SIMPLE
+
+SLAR_start = step2D_visc_0-01_ref_
+SLAR_ref = 3_0_0_
+SLAR_end = _blockA.xml, _blockAmod_0.xml, _blockAmod_1.xml, _blockAwhole.xml, _LSC_tmp.xml, _LSC_x.xml, _SIMPLE.xml, _MSIMPLER.xml, _PCD_pMassSolver.xml, _PCD_pSolver.xml
+SLAR = deg_1_elev_0_st, deg_2_elev_0_st, deg_3_elev_0_st
+
+saveToDat = false
+
+#======================== MG ======================================
+
+levels = 3
+cycles = 1
+presmooth = 1
+postsmooth = 1
+extrasmooth = false
+damping = -1
+scaling = 0.12
+tolerance = 1e-3
+maxIterations = 100
+
+#CG, GM
+method = CG
+#J, GS, Ri, SCMS (pouze pro jednu slozku rychlosti), HYB
+smoother = J, GS, Ri, SCMS, HYB
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- For Biharmonic Surface problem-->
+<xml>
+<Pde type="SurfacePoissonPde" dim="3">
+<rhs> ( (1/( (3.0/2.0) -sqrt(2)) ) * sin(3.0*pi*z/4.0) *(  18.0*pi^4.0 + ((9.0*pi^2.0 + 64.0)^2.0 )*sin(2.0*atan(x/y)) - 2.0*((9.0*pi^2.0 + 16.0)^2.0)*(sin(atan(x/y))+cos(atan(x/y))) ) )/(32.0) 
+  </rhs>
+<solution></solution>
+</Pde>
+<Function type="FunctionExpr" id="100"  dim="3">sin( z*3.0*pi/4.0) * (1.0/((3.0/2.0)-sqrt(2))) * (1-cos( atan(x/y) ))*(1-sin( atan(x/y) ))</Function>
+</xml>

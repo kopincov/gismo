@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <!-- Patch 0 -->
+ <Geometry type="TensorBSpline3" id="0">
+   <Basis type="TensorBSplineBasis3">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="1">0.00000   0.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="1">0.00000   0.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="2">
+     <KnotVector degree="1">0.00000   0.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+   </Basis>
+  <coefs geoDim="3"> 10 0 0  20 0 0  10 1 0  20 1 0  10 0 1  20 0 1  10 1 1  20 1 1  
+   </coefs>
+ </Geometry>
+ 
+<!-- Patch 1 -->
+<Geometry type="TensorBSpline3" id="1">
+   <Basis type="TensorBSplineBasis3">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="1">0.00000   0.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="1">0.00000   0.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="2">
+     <KnotVector degree="1">0.00000   0.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+   </Basis>
+  <coefs geoDim="3"> 0 0 0  10 0 0  0 1 0  10 1 0  0 0 1  10 0 1  0 1 1  10 1 1  
+   </coefs>
+ </Geometry>
+ 
+   <!-- A multipatch section describes the configuration of the two patches above -->
+  <MultiPatch parDim="3" id="0">
+    <patches type="id_range">0 1</patches>
+    <interfaces>1 2 0 1 0 1 2 1 1 1
+    </interfaces>
+    <boundary>
+      1 1
+      1 3
+      1 4
+      1 5
+      1 6
+      0 2
+      0 3
+      0 4
+      0 5
+      0 6
+    </boundary>
+  </MultiPatch>
+
+</xml>

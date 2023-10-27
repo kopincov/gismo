@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<!-- One quarter of the Hemker model -->
+ <Geometry type="TensorBSpline2" id="1">
+
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0.00000   0.00000   0.00000   1.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0.00000   0.00000   0.00000   1.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+   </Basis>
+
+  <coefs geoDim="2">
+   .1 .0
+   .1 .041421356237
+   .070710678118 .070710678118
+   .25 .0
+   .25 .12
+   .235 .235
+   .4 .0
+   .4 .2
+   .4 .4
+  </coefs>
+  
+ </Geometry>
+ 
+ <Geometry type="TensorBSpline2" id="2">
+
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0.00000   0.00000   0.00000   1.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0.00000   0.00000   0.00000   1.00000   1.00000   1.00000</KnotVector>
+    </Basis>
+   </Basis>
+
+  <coefs geoDim="2">
+   .070710678118 .070710678118
+   .041421356237 .1
+   .0 .1
+   .235 .235
+   .12 .25 
+   .0 .25   
+   .4 .4
+   .2 .4
+   .0 .4
+  </coefs>
+  
+ </Geometry>
+</xml>
+

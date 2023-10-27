@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Geometry representing a shelf with a support structure.
+
+THB-Splines of degree 2.
+
+WARNING:
+Does not contain interface and boundary
+information yet. 
+Must run call gsMultiPatch::computeTopology() 
+before using this geometry for PDEs.
+-->
+
+<xml>
+ <Geometry type="THBSpline2" id="0">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+0.00000000 0.00000000
+0.00000000 1.00000000
+0.00000000 2.00000000
+0.50000000 0.33333333
+0.50000000 1.16666667
+0.50000000 2.00000000
+1.00000000 0.66666667
+1.00000000 1.33333333
+1.00000000 2.00000000
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="1">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.33333333 0.66666667 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+0.00000000 2.00000000
+0.00000000 3.00000000
+0.00000000 4.00000000
+0.00000000 5.00000000
+0.00000000 6.00000000
+0.50000000 2.00000000
+0.50000000 3.00000000
+0.50000000 4.00000000
+0.50000000 5.00000000
+0.50000000 6.00000000
+1.00000000 2.00000000
+1.00000000 3.00000000
+1.00000000 4.00000000
+1.00000000 5.00000000
+1.00000000 6.00000000
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="2">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+0.00000000 6.00000000
+0.00000000 6.75000000
+0.00000000 7.50000000
+0.50000000 6.00000000
+0.50000000 6.75000000
+0.50000000 7.50000000
+1.00000000 6.00000000
+1.00000000 6.75000000
+1.00000000 7.50000000
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="3">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.20000000 0.40000000 0.60000000 0.80000000 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+1.00000000 6.00000000
+2.00000000 6.00000000
+3.00000000 6.00000000
+4.00000000 6.00000000
+5.00000000 6.00000000
+6.00000000 6.00000000
+7.00000000 6.00000000
+1.00000000 6.75000000
+2.00000000 6.75000000
+3.00000000 6.75000000
+4.00000000 6.75000000
+5.00000000 6.75000000
+6.00000000 6.75000000
+7.00000000 6.75000000
+1.00000000 7.50000000
+2.00000000 7.50000000
+3.00000000 7.50000000
+4.00000000 7.50000000
+5.00000000 7.50000000
+6.00000000 7.50000000
+7.00000000 7.50000000
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="4">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+7.00000000 6.00000000
+8.00000000 6.00000000
+9.00000000 6.00000000
+7.00000000 6.75000000
+8.00000000 6.75000000
+9.00000000 6.75000000
+7.00000000 7.50000000
+8.00000000 7.50000000
+9.00000000 7.50000000
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="5">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.33333333 0.66666667 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+9.00000000 6.00000000
+10.00000000 6.00000000
+11.00000000 6.00000000
+12.00000000 6.00000000
+13.00000000 6.00000000
+9.00000000 6.75000000
+10.00000000 6.75000000
+11.00000000 6.75000000
+12.00000000 6.75000000
+13.00000000 6.75000000
+9.00000000 7.50000000
+10.00000000 7.50000000
+11.00000000 7.50000000
+12.00000000 7.50000000
+13.00000000 7.50000000
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="6">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.16666667 0.33333333 0.50000000 0.66666667 0.83333333 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">
+1.00000000 0.66666667
+2.14285714 1.42857143
+3.28571429 2.19047619
+4.42857143 2.95238095
+5.57142857 3.71428571
+6.71428571 4.47619048
+7.85714286 5.23809524
+9.00000000 6.00000000
+1.00000000 1.33333333
+2.00000000 2.00000000
+3.00000000 2.66666667
+4.00000000 3.33333333
+5.00000000 4.00000000
+6.00000000 4.66666667
+7.00000000 5.33333333
+8.00000000 6.00000000
+1.00000000 2.00000000
+1.85714286 2.57142857
+2.71428571 3.14285714
+3.57142857 3.71428571
+4.42857143 4.28571429
+5.28571429 4.85714286
+6.14285714 5.42857143
+7.00000000 6.00000000
+</coefs>
+ </Geometry>
+<MultiPatch parDim="2" id="0">
+ <patches type="id_range">0 6</patches>
+</MultiPatch>
+</xml>

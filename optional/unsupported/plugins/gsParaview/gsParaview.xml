@@ -1,0 +1,92 @@
+<ServerManagerConfiguration>
+
+  <ProxyGroup name="sources">
+    <SourceProxy name="GismoReader" 
+                 class="vtkGismoReader"
+                 label="G+Smo Reader">
+      <Documentation
+	      short_help="Read a Gismo file."
+	      long_help="Read a Gismo file into an image data.">
+	    This reader loads G+Smo's XML files. The default file extension is .xml.
+      </Documentation>
+      
+      <StringVectorProperty
+          name="FileName"
+          animateable="0"
+          command="SetFileName"
+          number_of_elements="1"
+          panel_visibility="never">
+        <FileListDomain name="files"/>
+        <Documentation>
+          This property specifies the file name.
+        </Documentation>
+      </StringVectorProperty>
+
+      <!-- ================================================== -->
+      <!-- Property for resolution -->
+      <!-- ================================================== -->
+      
+      <IntVectorProperty
+          name="Resolution"
+          command="SetResolution"
+          number_of_elements="1"
+          animateable="1"
+          default_values="1000"
+          >
+        <IntRangeDomain name="range" min="100" max="10000" />
+        <Documentation>
+          This property specifies the number of points used to draw the
+          geometry. 
+        </Documentation>
+      </IntVectorProperty>
+      
+
+      <!-- ================================================== -->
+      <!-- Property for control net -->
+      <!-- ================================================== -->
+
+      <IntVectorProperty command="SetControlNet"
+                         default_values="0"
+                         name="ControlNet"
+                         number_of_elements="1">
+        <BooleanDomain name="bool" />
+        <Documentation>
+          If set to true, the output will also contain the control net.
+        </Documentation>
+      </IntVectorProperty>
+
+
+      <!-- ================================================== -->
+      <!-- Property for plotting -->
+      <!-- ================================================== -->
+      
+      <IntVectorProperty command="SetPlotType"
+                         default_values="1"
+                         name="PlotType"
+                         number_of_elements="1">
+
+        <EnumerationDomain name="enum">
+          <Entry text="Geometry"
+                 value="1" />
+          <Entry text="Mesh"
+                 value="2" />
+          <Entry text="Geometry and Mesh"
+                 value="3" />
+        </EnumerationDomain>
+        <Documentation>
+          This property specifies the type of output. 
+          Geometry (default) - plot the geometry
+          Mesh - plot the computational mesh (the elements).
+        </Documentation>
+      </IntVectorProperty>
+
+
+
+      <Hints>
+	    <ReaderFactory extensions="xml"
+                       file_description="G+Smo Data File" />
+      </Hints>
+    </SourceProxy>
+  </ProxyGroup>
+  
+</ServerManagerConfiguration>

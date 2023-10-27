@@ -1,0 +1,110 @@
+namespace gismo {
+/**
+
+<!--Starting the page-->
+\page ExampleDoxygenPage Example for making doxygen pages
+
+This is an example doxygen page
+
+\section sec00 Learning about doxygen syntax
+
+Here we go:
+
+- For the full range of possibilities, see the 
+<a href="https://www.stack.nl/~dimitri/doxygen/manual/markdown.html" target="_blank">doxygen manual pages</a>.
+
+- You can also see <a href="http://www.digilife.be/quickreferences/QRC/Doxygen%20Quick%20Reference.pdf" target="_blank">the quick reference manual</a>
+
+- Google it for more tutorials, for instance <a href="https://api.haiku-os.org/apidoc.html" target="_blank">this page</a> or [this one](http://www.coocox.org/book/coocox/coide-dev-manual.en/07-Document-for-Code/07.02-Use-markdown-in-doxygen).
+
+\subsection subsec00 Compiling this doxygen page
+
+- To compile and see this documentation page on your local copy do
+\code
+> make doc-devel
+> firefox devel/doc/html/ExampleDoxygenPage.html
+\endcode
+inside your build folder. If you rebuild the page, just hit F5 to refresh it.
+
+- To make the compilation run fast you can uncomment the line 
+\verbatim
+# Uncomment the line below to have doxygen process only 
+# what is inside the doc folder when typing 'make doc-devel'
+set(GISMO_DOXY_INPUT                    " \"${gismo_dev_SOURCE_DIR}/doc\" ")
+\endverbatim
+inside the file <b>gismo/devel/doc/CMakeLists.txt</b>, locally at our copy.
+Now only the pages inside doc will be compiled, instead of all the in-source documentation.
+
+- To find any errors in your document, look at the log file, eg. (after running <i>make</i>) in linux
+\code
+> make doc-devel
+> cat devel/doc/doxygen.log
+\endcode
+or just open the file devel/doc/doxygen.log in some editor.
+
+\note
+You need to have doxygen installed on your computer for all this.
+\n
+
+
+<!-- the key sec01 can be used to refer to this section-->
+\section sec01 First section
+
+Here is how we add images:
+
+Image files should be placed inside <b>devel/doc/figs</b>.
+
+\image html firefox-unblock.png "This is the first image."
+
+\subsection subsec1 A subsection
+
+See \ref sec01 for adding images, also \ref sec02 for adding code and 
+\ref subsec2 to see how to add tables.
+
+We can also refer to gismo classes, eg. gismo::gsBSplineBasis
+\section sec02 Second section
+
+Here is how we add code snippets:
+
+\code{.cpp}
+#include <gismo.h>
+
+// We will be using functions in the namespace gismo
+using namespace gismo;
+
+void main()
+{
+    gsInfo<<"Hello G+Smo! \n";
+}
+\endcode
+
+
+\subsection subsec2 Another subsection
+
+Here is how we add a table:
+
+Name of procedure        | Which basis function | Evaluate what
+-------------------------|----------------------|-------------------------------
+\c eval(u)                 | all active at u        | value
+\c deriv(u)	           | all active at u	    | first derivative(s)
+\c deriv2(u)               | all active at u	    | second derivative(s)
+
+
+\subsection subsecMath Math Formulas
+
+You can use latex in doxygen, inline \f$ x^y \f$, or display
+\f{eqnarray*}{
+\frac x y
+\f}
+note the extra "slash f" needed.
+
+\subsection subsecLast The last subsection
+
+Just an image
+
+<!-- image files should be placed at devel/doc/figs-->
+\image html chrome-unblock.png "This is the second image."
+
+
+*/
+}

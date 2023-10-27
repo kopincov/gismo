@@ -1,0 +1,109 @@
+#mainDir = build/linearTesting/
+mainDir = /home/jirieggy/gismoQT/build/linearTesting/
+matrixDir = matrices/
+inletBCDir = inletBCs/
+gammaOptDir = gammaOpt/
+precondTestDir = precondTest/
+precondTestTolDir = precondTestTol/
+
+#==================================== BC ===============================================
+
+numRef = 0
+addRefV = 0
+numRefU = 0
+numRefV = 0
+visc = 0.1
+numKnotU = 1
+numKnotV = 1
+maxIt = 50
+maxPicardIt = 5 
+linMaxIt = 100
+maxUin = 3
+tol = 1e-3
+tolPicard = 1e-5
+linTol = 1e-6
+plot = false
+
+precType = MSIMPLER_AdiagEqual
+precmaxIt = 10
+precfill = 2
+prectol = 1e-2
+precdropTol = 1e-8
+precgamma = 1.0
+preciter = false
+preclumpingM = false
+preclumpingA = false
+
+#============================================== MatrixGen ==================================================
+
+GnumRef = 0
+GnumRefU = 0
+numRefW = 0
+degElev = 0
+timeStep = 0.01
+omega = 0
+steady = true
+GmaxIt = 5
+GmaxPicardIt = 10
+GlinMaxIt = 100
+linDomain = false
+periodic = true
+Gplot = false
+saveMat = true
+GnumKnotU = 1
+numKnotW = 1
+sliceKnot = 7
+numVanes = 14
+Gtol = 1e-5
+GtolPicard = 1e-5
+GlinTol = 1e-6
+computeIC = true
+inputIC = 
+GprecType = MSIMPLER_AdiagEqual
+GprecmaxIt = 10
+Gprecfill = 2
+Gprectol = 1e-2
+GprecdropTol = 1e-8
+Gprecgamma = 1.0
+Gpreciter = 0
+GpreclumpingM = 0
+GpreclumpingA = 0
+
+================================================ PrecondTest ================================
+
+solver = GMRESright
+dim = 3
+itStep = 10
+PmaxIt = 100
+Ptol = 1e-20
+lu = true
+precN = LSC_AdiagEqual, LSC_Adiag, LSC_Amod, LSC_Awhole, SIMPLE_AdiagEqual, SIMPLE_Adiag, SIMPLE_Amod, SIMPLE_Awhole, SIMPLER_AdiagEqual, SIMPLER_Adiag, SIMPLER_Amod, SIMPLER_Awhole, MSIMPLER_AdiagEqual, MSIMPLER_Adiag, MSIMPLER_Amod, MSIMPLER_Awhole
+PprecmaxIt= 10
+Pprecfill= 2
+Pprectol= 1e-2
+PprecdropTol= 1e-8
+Pprecgamma= 1.0
+PprecalphaP= 1.0
+Ppreciter= false
+PpreclumpingM = true
+PpreclumpingA = true
+
+========================================= PrecondTestTol====================================
+
+precgammaM = 0.5
+
+======================================= gammaOpt ===============================================
+
+OmaxIt = 100
+gammaMax = 2.6
+gammaMin = 0.1
+gammaStep = 0.2
+Otol = 1e-10
+OprecN = AL_Awhole
+OprecmaxIt = 10
+Oprecfill = 2
+Oprectol = 1e-2 
+OprecdropTol = 1e-8
+Opreciter = false
+OpreclumpingM = false
+

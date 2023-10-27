@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created by G+Smo 0.8.3-->
+<xml>
+ <Geometry type="TensorBSpline3" id="0">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">1/17 1/20 2/15 
+13/15 1/15 2/25 
+1/12 14/15 1/15 
+18/19 17/18 2/25 
+0 0 -6/5 
+10/9 1/10 -32/31 
+1/25 16/15 -19/20 
+16/15 14/15 -9/10 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="1">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">1/17 1/20 2/15 
+13/15 1/15 2/25 
+1/12 14/15 1/15 
+18/19 17/18 2/25 
+1/10 1/15 33/35 
+16/15 1/13 51/50 
+1/15 14/15 34/35 
+26/25 34/35 21/20 
+</coefs>
+ </Geometry>
+ <MultiPatch parDim="3" id="2">
+  <patches type="id_range">0 1</patches>
+  <interfaces>1 5 0 5 0 1 2 1 1 0
+</interfaces>
+  <boundary>1 6
+1 3
+1 2
+1 1
+0 6
+1 4
+0 4
+0 3
+0 2
+0 1
+</boundary>
+ </MultiPatch>
+</xml>
+

@@ -1,0 +1,230 @@
+#geomChoice
+0
+#index_of_profile
+0
+#type of vector 0 - nonuniform; 1 - uniform
+1
+#coarse domain (do not include special refinement) 0 - refined, 1 - coarse
+0
+#makeLinear 0 - false, 1 -true
+0
+#num of refinement for true makeLinear (refines mesh before all other refinements)
+0
+#uniform refine of all patches
+4
+#----number of uniform refine for specific boundary (analogous structure as local refine)---
+0
+#----number of local refine for specific boundary---
+21
+#--------refine 1: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+16
+#num of refinements
+1
+#--------refine 2: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+32
+#num of refinements
+1
+#--------refine 3: for id_patch---------
+0
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+16
+#num of refinements
+2
+#--------refine 4: for id_patch---------
+1
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+16
+#num of refinements
+2
+#--------refine 5: for id_patch---------
+0
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+25
+#num of refinements
+3
+#--------refine 6: for id_patch---------
+1
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+25
+#num of refinements
+3
+#--------refine 7-1: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+8
+#num of refinements
+2
+#--------refine 7-2: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+8
+#num of refinements
+1
+#--------refine 7-3: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+5
+#num of refinements
+1
+#--------refine 8: for id_patch---------
+0
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+4
+#num of refinements
+4
+#--------refine 9: for id_patch---------
+0
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+4
+#num of refinements
+4
+#--------refine 10: for id_patch---------
+1
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+4
+#num of refinements
+8
+#--------refine 11: for id_patch---------
+1
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+4
+#num of refinements
+8
+#--------refine 12: for id_patch---------
+2
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+4
+#num of refinements
+8
+#--------refine 13: for id_patch---------
+2
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+4
+#num of refinements
+8
+#--------refine 14: for id_patch---------
+0
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+1
+#--------refine 15: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+2
+#num of refinements
+3
+#--------refine 16: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+1
+#num of refinements
+7
+#--------refine 17: for id_patch---------
+0
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+1
+#num of refinements
+5
+#--------refine 18: for id_patch---------
+1
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+1
+#num of refinements
+5
+#--------refine 19: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+5
+#------------------number of geom parameters---------------------
+0

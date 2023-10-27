@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<Pde type="PoissonPde" dim="2" targetDim="2">
+
+<rhs dim="2">
+<component index="0">
+v:=0.6;-(v-1.0)*v*x^(v-2.0)
+</component>
+<component index="1">
+v:=0.6;-(v-1.0)*v*y^(v-2.0)
+</component>
+</rhs>
+
+</Pde>
+<solution >
+</solution>
+
+<Function type="FunctionExpr" id="100" dim="2">
+<c index="0">
+v:=0.6;x^(v) - x
+</c>
+<c index="1">
+v:=0.6;x^(v) - x
+</c>
+</Function>
+</xml>

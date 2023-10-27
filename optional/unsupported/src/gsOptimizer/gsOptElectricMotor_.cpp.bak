@@ -1,0 +1,18 @@
+
+#include <gsCore/gsTemplateTools.h>
+#include <gsOptimizer/gsOptElectricMotor.h>
+#include <gsOptimizer/gsOptElectricMotor.hpp>
+
+#ifndef GISMO_WITH_IPOPT
+#include <gsIpopt/gsOptProblem.h>
+#include <gsIpopt/gsOptProblem.hpp>
+#endif
+
+namespace gismo
+{
+#ifndef GISMO_WITH_IPOPT
+    CLASS_TEMPLATE_INST gsOptProblem<real_t>;
+#endif
+
+    CLASS_TEMPLATE_INST gsOptElectricMotor<real_t>;
+}

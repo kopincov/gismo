@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Kellogg's discontinuous coefficients benchmark.
+(cf. R. B. Kellogg, On the Poisson equation with intersecting interfaces, Appl. Anal., 4 (1975), pp. 101–129)
+
+u -  distance r to the power gamma
+v -  angle theta in interval [-pi,pi]
+w -  parameter gamma
+z -  parameter sigma
+
+parameter rho is set to pi/4
+
+w=0.3 coefs (17.349722174715282417,1.0,17.349722174715282417,1.0)
+z := -14.92256510455152;
+
+w=0.4 coefs (9.47213595499957939281,1.0,9.47213595499957939281,1.0)
+z=4.712388980384689857693965
+-->
+<xml>
+<Pde type="PoissonPde" dim="2">
+<rhs> 0 </rhs>
+</Pde>
+<Function type="FunctionExpr" id="100" dim="2">
+u :=(x^2 + y^2)^(w/2.0); 
+v := atan2(y,x);
+w := 0.4;
+z := 4.712388980384689857693965;
+if( y >= 0,
+if( x >= 0,
+cos( ((pi/2.0)-z)*w) * cos( (v-(pi/4.0))*w ) ,
+cos(  w*(pi/4.0)   ) * cos( (v-pi + z  )*w ) 
+),if( 0 >= x, 
+cos( w*z        ) * cos( ( 2*pi+v -(5*pi/4.0) )*w ) ,
+cos( w*(pi/4.0) ) * cos( ( 2*pi+v -(3*pi/2.0)-z)*w )
+)) * u;
+</Function>
+</xml>

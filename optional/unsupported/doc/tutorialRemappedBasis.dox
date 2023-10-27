@@ -1,0 +1,130 @@
+namespace gismo {
+
+/**
+ 
+<!--Starting the page-->
+\page tutorialRemappedBasis tutorialRemappedBasis.cpp
+
+\section Disclaimer
+
+This is under development and no interface guarantees are given!
+
+This is an evolution of the <b>smoothed bases</b>, and draws ideas from the THB implementation as well.
+
+
+\section compSec01 Local representations
+
+A <i>piecewise definition</i> of a function \f$ \phi:\Omega\rightarrow \mathbb{R} \f$
+is an expression of the type 
+\f[
+	\phi(x)=\begin{cases}
+			\phi_0(x) & x \in \Omega_0\\
+			\ldots\\
+			\phi_m(x) & x \in \Omega_m
+			\end{cases}
+\f]
+where \f$ \Omega_1,\dots, \Omega_m \f$ is a partition of \f$ \Omega\f$.
+
+The idea about the remapped basis is that we  can express a function \f$ \phi:\Omega\rightarrow \mathbb{R} \f$
+in different basis in different pieces of the domain. That is
+\f[
+	\phi_i =\sum_{\beta_j \in \mathfrak{B}_i} b_{i,j} \beta_j
+\f]
+and thus 
+\f[
+	\phi(x)=\begin{cases}
+			\displaystyle \sum_{\beta_0 \in \mathfrak{B}_0} b_{0,j} \beta_j(x) & x \in \Omega_0\\
+			\ldots\\
+			\displaystyle\sum_{\beta_m \in \mathfrak{B}_m} b_{m,j} \beta_j(x) & x \in \Omega_m
+			\end{cases}
+\f]
+
+Since we can do that with a function we can also do that with a set of functions, for instance with a basis.
+
+Summing up: a piecewise representation of a function contains three pieces of information:
+	1. the local bases,
+	2. the domain partitioning,
+	3. the local coefficients.
+	
+Having those we can evaluate and do everything (actually many things are missing).
+
+ 
+
+\section compSec02 Implementation: the local bases
+
+We use a std::vector of std::shared_ptr, this simplifies memory management.
+
+\snippet tutorialRemappedBasis.cpp Basis vector
+
+
+\section compSec03 Implementation: the domain partition
+
+<b>IMPORTANT</b>: focus on the needs!
+
+To evaluate \f$ \phi \f$ we need only the function associate a point to a basis.
+So we the object <b>gsSelector</b> that provide the following function
+
+\code{.cpp}
+    /**
+     * Returns the basisId of the basis capable of depicting all the basis functions
+     * active in the point @a p.
+     */
+    template <typename PointType>
+    basisIdT gsSelector::getBasisAt (const PointType &p, patchIdT patch=0) const;
+\endcode
+
+The gsSelector implementation is derived by the [T]HB-spline. Internally it uses a decision tree structure where the questions have the form
+\f[
+	x_i \geq p ?
+\f]
+
+How do we inititialize a gsSelector? By givin a list of axis aligned boxes with associated
+indices of the basis to use.
+
+For example to specify the following domain
+
+\image html figs/remappedMesh.png "Domain"
+
+we use this list of boxes
+
+\snippet tutorialRemappedBasis.cpp Construct boxes
+
+We can then initialize the selector and check the resulting mesh.
+
+\section compSec04 Implementation: the coefficients
+
+This uses a sparse matrix exactly in the same way as the <b>smoothed bases</b> that Florian presented.
+The coefficient of each function are stored in a column of a sparse matrix. Since we store the coefficients for each local basis the matrix must have
+\f[
+	\sum_{i=0}^{m} \dim  \mathfrak{B}_i
+\f]
+rows. 
+The number of functions we want to represent equals the number of columns.
+
+\snippet tutorialRemappedBasis.cpp Coefficients
+
+\section compSec05 Wrapping up
+
+Then we construct the function and test the result.
+
+\snippet tutorialRemappedBasis.cpp Remapped function
+
+Similarly we have an implementation of piecewise bases.
+It works like the function is possible to construct a gsRemappedBasis explicitly.
+
+\snippet tutorialRemappedBasis.cpp Remapped basis
+
+Or to use as a building block of other basis. We have a re-implementation of HB and THB as gsRemappedBasis.
+
+\snippet tutorialRemappedBasis.cpp RemappedTHB
+
+
+\section sTuto34890Annotated Annotated source file
+
+Here is the full file \c examples/tutorialRemappedBasis.cpp. Clicking on a function or class name will lead you to its reference documentation.
+
+\include tutorialRemappedBasis.cpp
+
+
+*/
+}

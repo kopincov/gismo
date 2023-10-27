@@ -1,0 +1,110 @@
+#plt_pts
+10000
+#numIterSteadyNS
+10
+#numIterSteadyTM
+20
+#----------------- numIterRANS -------------------------
+10
+#minNumIterRANS
+1
+#maxRANSPicardIt
+5
+#------------ maxTMPicardFirstIt 
+10
+#maxTMPicardIt
+5
+#RANStauTypeSUPG
+2
+#RANStauTypeAD
+2
+#RANSsrbavType
+0
+#RANSsrbavResidualType
+0
+#tauSRBAV
+2
+#-------------- TMtauTypeSUPG 3/5(dt) -------------------
+3
+#TMtauTypeAD
+3
+#TMsrbavType
+0
+#TMsrbavResidualType
+0
+#TMtauSRBAV
+3
+#-------------- isoADtype 4(TM_isoAD4)/6(TM_isoAD6) -----------------
+4
+#animateStep
+500
+#plot_pts_atProfile
+173
+#----------- timeStep
+0.0001
+#tolRelNorm
+1e-10
+#viscosity
+0.00001
+#viscositySteady
+0.05
+#turbIntensity
+0.04
+#viscosityRatio
+10.
+#starting productionXPoint (Domain0 profile0: -0.16)
+-0.16
+#RANSsrbavAlpha
+1.
+#TMsrbavAlpha
+1.
+#srbavScaleFactorRes ... for RANS
+1.
+#srbavScaleFactorH ... for both RANS and TM
+1.
+#srbavScaleFactorRes_k
+1.
+#srbavScaleFactorRes_omega
+1.
+#tmEvaluator koWilcoxLRN, koSST
+koSST
+#plot
+1
+#plotMeshes
+0
+#SUPG
+0
+#TCSD
+0
+#RANSad
+0
+#RANSsrbav
+0
+#TMSupg
+0
+#TMad
+0
+#TMisoAD
+0
+#TMafc
+0
+#TMafcHighOrder
+0
+#TMsrbav
+0
+#animate
+0
+#limitTMProduction
+1
+#loadIC from file ("RANS_IC_solution.xml" and "TM_IC_solution.xml")
+0
+#NSsteady solution as initial condition. Zero velocity initial condition otherwise
+0
+#UyInZero ... set zero Uy at inlet boundary (true/false) 
+0
+#computeTMfirst ... set sequence of the computation at every time step: true = TM->RANS / false = RANS->TM
+0
+#refined_grid ... 0 coarser (24349DoFs) / 1 finer (74879DoFs)
+1
+#reSaveSolution ... true - load xml and save solution to pvd with the chosen plt_pts and plot_pts_atProfile
+0

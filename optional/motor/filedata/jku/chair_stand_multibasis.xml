@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created by G+Smo 0.8.1alpha-->
+<xml>
+ <Basis type="TensorBSplineBasis3" id="0">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="1">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="2">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="3">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="4">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="5">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="6">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="7">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <Basis type="TensorBSplineBasis3" id="8">
+  <Basis type="BSplineBasis" index="0">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="1">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+  <Basis type="BSplineBasis" index="2">
+   <KnotVector degree="2">0 0 0 0.2 0.4 0.6000000000000001 0.8 1 1 1 </KnotVector>
+  </Basis>
+ </Basis>
+ <MultiBasis parDim="3" id="9">
+  <patches type="id_range">0 8</patches>
+  <interfaces>8 6 6 1 1 2 0 1 1 1
+7 4 1 3 2 1 0 1 1 0
+6 6 5 3 2 0 1 1 1 1
+5 4 4 3 2 1 0 0 1 1
+4 6 3 5 1 0 2 0 1 1
+3 6 0 1 2 1 0 1 0 1
+2 6 0 2 2 1 0 0 0 0
+7 3 0 5 1 2 0 1 0 0
+2 5 4 5 1 0 2 0 0 0
+8 5 6 2 1 2 0 1 1 1
+</interfaces>
+  <boundary>0 3
+0 4
+0 6
+1 1
+1 2
+1 4
+1 5
+1 6
+2 1
+2 2
+2 3
+2 4
+3 1
+3 2
+3 3
+3 4
+4 1
+4 2
+4 4
+5 1
+5 2
+5 5
+5 6
+6 3
+6 4
+6 5
+7 1
+7 2
+7 5
+7 6
+8 1
+8 2
+8 3
+8 4
+</boundary>
+ </MultiBasis>
+</xml>
+

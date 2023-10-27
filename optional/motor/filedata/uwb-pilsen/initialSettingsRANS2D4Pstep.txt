@@ -1,0 +1,124 @@
+#plt_pts
+10000
+#numIterSteadyNS
+10
+#numIterSteadyTM
+50
+#----------------- numIterRANS -------------------------
+10
+#minNumIterRANS
+1
+#maxRANSPicardIt
+5
+#------------ maxTMPicardFirstIt 
+10
+#maxTMPicardIt
+5
+#------------- RANStauTypeSUPG
+2
+#RANSsrbavType ... 0/1(h^alpha)/2(tanh-tanh-CSD)
+1
+#RANSsrbavResidualType (whole residual/advection/advection plus time der. term)
+0
+#RANStausrbav
+2
+#RANStauTypeAD
+2
+#-------------- TMtauTypeSUPG 3/5(dt) -------------------
+3
+#----------- TMsrbavType ... 0+tauS/1+tauS(h^alpha)/2+tauS(tanh-tanh-CSD) ----------
+0
+#TMsrbavResidualType
+0
+#TMtauSRBAV 3/5(dt)
+3
+#animateStep
+50
+#refineType (0/1/2) ..... 2
+2
+#numRefine .. uniform ... 4
+2
+#numRefineLocal ......... 6
+6
+#geom.degree
+1
+#plot_pts_atWalls
+200
+#numFinalYplusRef
+2
+#numFinalSingularPointRef
+2
+#hDirTypeRANS //0-RGN; 1-UGN;
+1
+#hDirTypeTM  //0-RGN; 1-UGN; (2-RQD; 3-MIN; 4-MAX)
+1
+#--------------timeStep
+0.00001
+#tolRelNorm
+1e-15
+#viscosity 0.00001425249169435216
+0.0000156
+#viscositySteady
+0.01
+#turbIntensity
+0.05
+#viscosityRatio
+500.
+#kIn - if "use BC and IC from OF" is true; OF default = 0.00109
+0.00109
+#oIn - if "use BC and IC from OF" is true; OF default = 181728
+181728
+#starting productionXPoint (Domain0 profile0: -0.16)
+-0.05
+#uMax... inlet
+44.2
+#RANS - SRBAValpha
+1.
+#TM - SRBAValpha
+1.
+#tmEvaluator koWilcoxLRN, koSST, koSSTMenter2009, koSAS
+koSSTMenter2009
+#plot
+1
+#plotMeshes
+0
+#SUPG
+0
+#IT-SUPG (T-CSD)
+0
+#RANSad
+0
+#RANSsrbav
+0
+#TMSupg
+0
+#TMad
+0
+#TMsrbav
+0
+#TMafc
+0
+#TMafcHighOrder
+0
+#animate
+0
+#limitTMProduction
+0
+#loadIC from file ("RANS_IC_solution.xml" and "TM_IC_solution.xml")
+0
+#NSsteady solution as initial condition. Zero velocity initial condition otherwise
+0
+#computeTMfirst ... set sequence of the computation at every time step: true = TM->RANS / false = RANS->TM
+0
+#use BC and IC from OF
+1
+#reSaveSolution ... true - load xml and save solution to pvd with the chosen plt_pts and plot_pts_atProfile
+0
+#dirElemLengthRANS
+0
+#dirElemLengthTM
+0
+#RANSafc
+0
+#RANSafcHighOrder
+0

@@ -1,0 +1,68 @@
+
+FILEDATA=path to the motor/filedata/jku/
+
+# ======================================================================
+#
+# Single patch parameterization in 2D
+
+## Coons patch
+./bin/gsView $FILEDATA/wavy_boundary_curves.xml
+
+./bin/tutorial_coons_patch
+
+## Fitting
+./bin/utils_plot_points $FILEDATA/wavy_boundary_data.xml
+
+./bin/tutorial_fitting
+
+
+# ======================================================================
+#
+# Multi patch parameterization in 2D 
+
+## Input
+./bin/gsView $FILEDATA/triangle_boundary_curves.xml  
+	     
+## Segmentation	     
+./bin/gsView $FILEDATA/triangle_segmentation.xml
+
+## Points
+./bin/utils_plot_points $FILEDATA/triangle_boundary_data.xml
+
+
+## Topology
+./bin/tutorial_make_triangular_topology
+./bin/gsView triangular_topology.xml
+./bin/utils_plot_topology triangular_topology.xml
+
+
+## Compute parameterization (use existing topology)
+./bin/tutorial_multipatch_fitting -t triangular_topology.xml
+
+## Compute parameterization (construct patches separatelly and then 
+## compute topology)
+
+./bin/tutorial_multipatch_fitting_2 
+./bin/utils_plot_topology parameterization_2_no_topology.xml
+./bin/utils_plot_topology parameterization_2_with_topology.xml
+
+# ======================================================================
+#
+# Single patch parameterization in 3D
+
+
+## Coons patch
+./bin/gsView $FILEDATA/skrew_boundary_surfaces.xml
+./bin/tutorial_coons_patch $FILEDATA/skrew_boundary_surfaces.xml
+
+## Fitting 
+./bin/utils_plot_points $FILEDATA/skrew_boundary_data.xml
+./bin/tutorial_fitting_3D
+
+# ======================================================================
+#
+# Multi patch parameterization in 3D
+
+./bin/utils_plot_points $FILEDATA/chair_stand_boundary_data.xml
+./bin/tutorial_multipatch_fitting_3D
+

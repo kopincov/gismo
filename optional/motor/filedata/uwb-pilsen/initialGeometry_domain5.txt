@@ -1,0 +1,103 @@
+#geomChoice
+5
+#index_of_profile
+0
+#type of vector 0 - nonuniform; 1 - uniform
+0
+#coarse domain (do not include special refinement) 0 - refined, 1 - coarse
+1
+#uniform refine of all patches
+2
+#----number of uniform refine for specific boundary (analogous structure as local refine)---
+0
+#----number of local refine for specific boundary---
+8
+#--------refine 1: for id_patch---------
+0
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+4
+#--------refine 2: for id_patch---------
+1
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+4
+#--------refine 3: for id_patch---------
+5
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+4
+#--------refine 4: for id_patch---------
+6
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+4
+#--------refine 5: for id_patch---------
+2
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+1
+#num of knot
+1
+#num of refinements
+8
+#--------refine 6: for id_patch---------
+4
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+1
+#num of refinements
+3
+#--------refine 7: for id_patch---------
+5
+#direction 0 - u, 1 - v
+0
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+1
+#num of refinements
+3
+#--------refine 8: for id_patch---------
+6
+#direction 0 - u, 1 - v
+1
+#position 0 - start patch, 1 - end patch
+0
+#num of knot
+1
+#num of refinements
+3
+#------------------number of geom parameters---------------------
+2
+#offset
+0.03
+#wake_width
+3
+
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+<!-- Boundary 1 / west-->
+ <Geometry type="BSpline" id="0">
+    <Basis type="BSplineBasis">
+     <KnotVector degree="1">0 0 0.25 0.5 0.75 1 1</KnotVector>
+    </Basis>
+  <coefs geoDim="2">0 0.1 0 0.35 0 .6 0 0.85 0 1.1</coefs>
+ </Geometry>
+
+<!-- Boundary 2 / east -->
+ <Geometry type="BSpline" id="1">
+    <Basis type="BSplineBasis">
+     <KnotVector degree="1">0 0 0.25 0.5 0.75 1 1</KnotVector>
+    </Basis>
+  <coefs geoDim="2">1 0.1 1 0.35 1 .6 1 0.85 1 1.1</coefs>
+ </Geometry>
+
+<!-- Boundary 3 / south-->
+ <Geometry type="BSpline" id="2">
+    <Basis type="BSplineBasis">
+     <KnotVector degree="1">0 0 0.25 0.5 0.75 1 1</KnotVector>
+    </Basis>
+  <coefs geoDim="2"> 1.1 0 0 1 -1.1 0 0 -1 1.1 0</coefs>
+ </Geometry>
+
+<!-- Boundary 4 / north -->
+ <Geometry type="BSpline" id="3">
+    <Basis type="BSplineBasis">
+     <KnotVector degree="1">0 0 0.25 0.5 0.75 1 1</KnotVector>
+    </Basis>
+  <coefs geoDim="2">0.1 0 0 0.1 -0.1 0 0 -0.1 0.1 0</coefs>
+ </Geometry>
+
+</xml>
+

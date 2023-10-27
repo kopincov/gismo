@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created by G+Smo 0.8.1-->
+<xml>
+ <Geometry type="BSpline" id="0">
+  <Basis type="BSplineBasis">
+   <KnotVector degree="1">0 0 1 1 </KnotVector>
+  </Basis>
+  <coefs geoDim="2">-2.775557561562891e-17 -5.125 
+0 -3 
+</coefs>
+ </Geometry>
+ <Geometry type="BSpline" id="1">
+  <Basis type="BSplineBasis">
+   <KnotVector degree="1">0 0 1 1 </KnotVector>
+  </Basis>
+  <coefs geoDim="2">-2.412500001490116 -1.5625 
+0 -3 
+</coefs>
+ </Geometry>
+ <Geometry type="BSpline" id="2">
+  <Basis type="BSplineBasis">
+   <KnotVector degree="1">0 0 1 1 </KnotVector>
+  </Basis>
+  <coefs geoDim="2">2.412500001490116 -1.5625 
+0 -3 
+</coefs>
+ </Geometry>
+ <MultiPatch parDim="1" id="3">
+  <patches type="id_range">0 2</patches>
+ </MultiPatch>
+</xml>
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+ <Geometry type="TensorBSpline3" id="0">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+1 0 0 
+0 1 0 
+1 1 0 
+0 0 1 
+1 0 1 
+0 1 1 
+1 1 1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="1">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+1 0 0 
+0 -1 0 
+1 -1 0 
+0 0 1 
+1 0 1 
+0 -1 1 
+1 -1 1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="2">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+-1 0 0 
+0 -1 0 
+-1 -1 0 
+0 0 1 
+-1 0 1 
+0 -1 1 
+-1 -1 1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="3">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+-1 0 0 
+0 1 0 
+-1 1 0 
+0 0 1 
+-1 0 1 
+0 1 1 
+-1 1 1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="4">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+1 0 0 
+0 1 0 
+1 1 0 
+0 0 -1 
+1 0 -1 
+0 1 -1 
+1 1 -1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="5">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+1 0 0 
+0 -1 0 
+1 -1 0 
+0 0 -1 
+1 0 -1 
+0 -1 -1 
+1 -1 -1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="6">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+-1 0 0 
+0 -1 0 
+-1 -1 0 
+0 0 -1 
+-1 0 -1 
+0 -1 -1 
+-1 -1 -1 
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="7">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">0 0 0 
+-1 0 0 
+0 1 0 
+-1 1 0 
+0 0 -1 
+-1 0 -1 
+0 1 -1 
+-1 1 -1 
+</coefs>
+ </Geometry>
+ <MultiPatch parDim="3" id="0">
+  <patches type="id_range">0 7</patches>
+  <interfaces>7 5 3 5 0 1 2 1 1 0
+7 3 6 3 0 1 2 1 0 1
+7 1 4 1 0 1 2 0 1 1
+6 5 2 5 0 1 2 1 1 0
+6 1 5 1 0 1 2 0 1 1
+5 5 1 5 0 1 2 1 1 0
+5 3 4 3 0 1 2 1 0 1
+4 5 0 5 0 1 2 1 1 0
+3 3 2 3 0 1 2 1 0 1
+3 1 0 1 0 1 2 0 1 1
+2 1 1 1 0 1 2 0 1 1
+1 3 0 3 0 1 2 1 0 1
+</interfaces>
+  <boundary>7 6
+7 2
+6 2
+5 6
+4 6
+5 2
+4 2
+6 6
+3 6
+7 4
+3 4
+6 4
+2 4
+3 2
+2 2
+5 4
+1 4
+1 6
+0 6
+4 4
+0 4
+1 2
+0 2
+2 6
+</boundary>
+ </MultiPatch>
+</xml>
+

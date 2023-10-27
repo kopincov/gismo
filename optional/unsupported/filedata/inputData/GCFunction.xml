@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is created with all the inputs information -->
+<xml>
+    
+    <!-- Geometry input: two planar 2D-Patches-->    
+    <Geometry type="TensorBSpline2" id="101">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">0 0
+        2 -0.5 
+        0 2 
+        3 3 
+        </coefs>
+    </Geometry>
+    <Geometry type="TensorBSpline2" id="102">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">0 0 
+        -2 0 
+        0 2
+        -2 2.5 
+        </coefs>
+    </Geometry>
+    <MultiPatch parDim="2" id="100">
+        <patches type="id_range">101 102</patches>
+        <interfaces>1 3 0 4 0 1 1 1
+        </interfaces>
+        <boundary>1 4
+        1 1
+        1 2
+        0 3
+        0 2
+        0 1
+        </boundary>
+    </MultiPatch>
+    <!-- ++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- Geometry input: two planar 2D-Patches--> 
+    <!-- RIGHT FIRST --> 
+    <Geometry type="TensorBSpline2" id="111">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">3/50 -1/20
+            787217/801720 -50021/400860
+            123/50 -61/100
+            347/100 -6/25
+            
+            7/20 24/25
+            3705053/3006450 2796793/3006450
+            113/50 17/20
+            53/20 113/100
+            
+            47/100 2
+            581369/445400 24743903/12025800
+            2 107/50
+            351/100 9/4
+            
+            1/20 307/100
+            267523/334050 1298303/400860
+            107/50 319/100
+            297/100 173/50
+        </coefs>
+    </Geometry>
+    <!-- LEFT SECOND -->
+    <Geometry type="TensorBSpline2" id="112">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">3/50 -1/20
+            -774887/668100 -19799/267240
+            -189/100 -107/100
+            -151/50 -49/100
+
+            7/20 24/25
+            -294947/334050 819/850
+            -101/50 57/100
+            -67/25 4/5
+
+            47/100 2 
+            -623281/801720 233057/117900
+            -213/100 109/50
+            -189/50 203/100
+
+            1/20 307/100
+            -422117/334050 1969021/668100
+            -201/100 189/50
+            -84/25 331/100
+        </coefs>
+    </Geometry>
+    <MultiPatch parDim="2" id="110">
+        <patches type="id_range">111 112</patches>
+    </MultiPatch>
+    <!-- ++++++++++++++++++++++++++++++++++++ -->   
+    
+    <Geometry type="TensorBSpline2" id="121">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">0 0
+        0.5 0
+        0 1 
+        0.5 1 
+        </coefs>
+    </Geometry>
+    <Geometry type="TensorBSpline2" id="122">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="1">0 0 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">0.5 0 
+        1 0
+        0.5 1
+        1 1 
+        </coefs>
+    </Geometry>
+    <MultiPatch parDim="2" id="120">
+        <patches type="id_range">121 122</patches>
+    </MultiPatch>
+   <!-- ++++++++++++++++++++++++++++++++++++ -->   
+    
+    <!-- Geometry input: two planar 2D-Patches 
+    - More complicated (not G1, suitable for G1)
+    right first-->    
+    <Geometry type="TensorBSpline2" id="131">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">-1/9 0
+        1/3 0
+        2/3 0
+        3/3 0
+        
+        0 1/3
+        1/3 1/2
+        2/3 1/2
+        3/3 1/3
+        
+        -1/6 2/3
+        1/3 5/8
+        2/3 5/8
+        3/3 2/3
+        
+        1/6 3/3
+        1/3 3/3
+        2/3 3/3
+        3/3 3/3
+        </coefs>
+    </Geometry>
+    <Geometry type="TensorBSpline2" id="132">
+        <Basis type="TensorBSplineBasis2">
+        <Basis type="BSplineBasis" index="0">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        <Basis type="BSplineBasis" index="1">
+            <KnotVector degree="3">0 0 0 0 1 1 1 1 </KnotVector>
+        </Basis>
+        </Basis>
+        <coefs geoDim="2">-1/9 0 
+        -1/3 0
+        -2/3 0
+        -3/3 0
+        
+        0 1/3
+        -1/3 1/6
+        -2/3 1/2
+        -3/3 1/3
+        
+        -1/6 2/3
+        -1/3 5/6
+        -2/3 5/6
+        -3/3 2/3
+        
+         1/6 3/3
+        -1/3 3/3
+        -2/3 3/3
+        -3/3 3/3
+        </coefs>
+    </Geometry>
+    <MultiPatch parDim="2" id="130">
+        <patches type="id_range">131 132</patches>
+    </MultiPatch>
+    <!-- ++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- +++++++++++++++++++++++++++ -->
+    <!-- ++++++++++ INPUT ++++++++++ -->
+    <!-- +++++++++++++++++++++++++++ -->
+    
+    <OptionList id="0">
+        
+        <!-- Compute the dimension formula; 0 == False, 1 == True -->
+        <int label="dimensionFormula" desc="Compute the dimension formula" value="1" />
+        
+        <!-- Get the basis; 0 == False, 1 == True -->
+        <int label="getbasis" desc="Get basis of the determinante" value="1" />
+        
+        <!-- ++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++++++ refinement +++++++++++ -->
+        <!-- ++++++++++++++++++++++++++++++++++ -->
+
+        <!-- Number for knot insertion -->
+        <int label="numRefine" desc="Number for knot insertion" value="2"/>
+
+        <!-- Number of the polynom degree -->
+        <int label="polynomDegree" desc="Number of the max. Polynom degree" value="3"/>
+        
+        <!-- Regularity within patches; C^r with r=value -->
+        <int label="regularity" desc="Regularity within patches" value="1"/>
+        
+        
+        <!-- ++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++ degree for splines +++++++ -->
+        <!-- ++++++++++++++++++++++++++++++++++ -->
+        
+        <!-- Degree for alpha_left -->
+        <int label="deg_alpha_left" desc="Degree for alpha_left" value="1"/>
+        
+        <!-- Degree for alpha_right -->
+        <int label="deg_alpha_right" desc="Degree for alpha_right" value="1"/>
+        
+        <!-- Degree for beta -->
+        <int label="deg_beta" desc="Degree for beta" value="2"/>
+        
+        <!-- Degree for beta_left -->
+        <int label="deg_beta_left" desc="Degree for beta_left" value="1"/>
+
+        <!-- Degree for beta_right -->
+        <int label="deg_beta_right" desc="Degree for beta_right" value="1"/>        
+
+            
+    </OptionList>
+    
+    
+    
+</xml>
+

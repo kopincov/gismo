@@ -1,0 +1,157 @@
+mainDir = /home/jirieggy/gismoQT/build/LTMG/
+matrixDir = matrices/
+#inletBCDir = inletBCs/
+domainDir = domains/
+#gammaOptDir = gammaOpt/
+#precondTestDir = precondTest/
+precondTestTolDir = precondTestTol/
+
+create_directories = false
+generate_multiPatch = false
+generate_matrices = false
+make_tests = false
+
+#============================================== MultiPatchGen ==================================================
+
+#geometry_type = profile2D
+#geometry_settings_file = /home/jirieggy/gismoQT/extensions/motor/filedata/uwb-pilsen/initialGeometry_CASE1.txt
+geometry_type = step2D
+geometry_settings_file = /home/jirieggy/gismoQT/extensions/motor/filedata/uwb-pilsen/stepMG.txt
+
+#============================================== MatrixGen ==================================================
+
+# for loading only, 0 = 1 v geomSouboru, 0 = 2 v geomSouboru, 0 = 0 v geomSouboru (zakladni geometrie generovana geomSouborem je ref_1_2_0)
+#VpatchesAndBasisFile = profile2D_profile0
+VpatchesAndBasisFile = step2D
+
+# = geomSoubor ("uniform refine of all patches") - 1
+VGnumRef = 3
+# = geomSoubor ("number of uniform refine for specific boundary") - 2
+VGnumRefU = 0
+# = geomSoubor ("number of local recursive refine for specific boundary")
+VGnumRefW = 0
+
+#Vsteady = true
+VtimeStep = 0
+
+# 0 = Tylor Hood, 1 = SG
+VelemType = 0
+#VlinDomain = false
+VdegElev = 0
+Vdeg = 1, 2, 3
+
+#!!!!!!!!!!!!!!!!!!!!!!momentalne nelze automaticky (SG + degElev!=0), (linDomain=false + degElev!=0)
+
+#elemTypeLinDomainDegElev = 0, false, 0, 1, false, 0
+
+#timeStep = 0.01
+omega = 0
+GmaxIt = 5
+GmaxPicardIt = 5
+GlinMaxIt = 100
+periodic = false
+Gplot = true
+saveMat = true
+GnumKnotU = 1
+numKnotW = 1
+sliceKnot = 7
+numVanes = 14
+Gtol = 1e-6
+GtolPicard = 1e-3
+GlinTol = 1e-6
+Gprectol = 1e-2
+GprecdropTol = 1e-6
+computeIC = true
+inputIC = 
+GprecType = MSIMPLER_AdiagEqual
+GprecmaxIt = 10
+Gprecfill = 2
+Gprecgamma = 1.0
+Gpreciter = 0
+GpreclumpingM = 0
+GpreclumpingA = 0
+
+================================================ PrecondTest ================================
+
+#matNS_start = profile2D_visc_0-01_ref_
+matNS_start = step2D_visc_0-01_ref_
+matNS_end = _matNS.xml
+
+#refinements = 0_0_0_, 0_0_2_, 0_0_4_, 1_0_0_, 1_0_2_, 1_0_4_, 2_0_0_, 2_0_2_, 2_0_4_
+refinements = 3_0_0_
+
+#matNS = deg_3_elev_0_unst_dt_0-001, deg_3_SG_unst_dt_0-001, deg_1_elev_0_unst_dt_0-001, deg_1_elev_2_unst_dt_0-001, deg_3_elev_0_unst_dt_0-01, deg_3_SG_unst_dt_0-01, deg_1_elev_0_unst_dt_0-01, deg_1_elev_2_unst_dt_0-01, deg_3_elev_0_unst_dt_0-0001, deg_3_SG_unst_dt_0-0001, deg_1_elev_0_unst_dt_0-0001, deg_1_elev_2_unst_dt_0-0001, deg_3_elev_0_st, deg_3_SG_st, deg_1_elev_0_st, deg_1_elev_2_st
+
+matNS = deg_1_elev_0_st, deg_2_elev_0_st, deg_3_elev_0_st
+
+tests = precondTestTol
+
+symmetryMatrix = true
+solver = GMRESright
+#dim = 3
+itStep = 10
+PmaxIt = 1
+Ptol = 1e-6
+lu = true
+firstFiner = true
+#precN = LSC_AdiagEqual, LSC_Adiag, LSC_Amod, LSC_Awhole, SIMPLE_AdiagEqual, SIMPLE_Adiag, SIMPLE_Amod, SIMPLE_Awhole, SIMPLER_AdiagEqual, SIMPLER_Adiag, SIMPLER_Amod, SIMPLER_Awhole, MSIMPLER_AdiagEqual, MSIMPLER_Adiag, MSIMPLER_Amod, MSIMPLER_Awhole
+precN = LSC_AdiagEqual, PCD_AdiagEqual, SIMPLE_AdiagEqual, SIMPLER_AdiagEqual, MSIMPLER_AdiagEqual, AL_Awhole, AL_Amod
+
+resHist = true
+Pprecfill = 2
+PprecmaxIt = 10
+PprecalphaP = 1
+PprecdropTol = 1e-06
+Pprecgamma = 1.
+PprecgammaM = 1.
+Pprectol = 0.01
+Ppreciter = false
+PpreclumpingA = false
+PpreclumpingM = false
+
+========================================= PrecondTestTol====================================
+
+======================================= gammaOpt ===============================================
+
+OmaxIt = 100
+gammaMax = 2.6
+gammaMin = 0.1
+gammaStep = 0.2
+Otol = 1e-10
+OprecN = AL_Awhole
+OprecmaxIt = 10
+Oprecfill = 2
+Oprectol = 1e-2 
+OprecdropTol = 1e-8
+Opreciter = false
+OpreclumpingM = false
+
+#==================================== BC ===============================================
+
+numRef = 1
+addRefV = 0
+numRefU = 1
+numRefV = 1
+visc = 0.01
+numKnotU = 1
+numKnotV = 1
+maxIt = 5
+maxPicardIt = 5 
+linMaxIt = 100
+maxUin = 3
+tol = 1e-3
+tolPicard = 1e-5
+linTol = 1e-6
+plot = false
+
+precType = MSIMPLER_AdiagEqual
+precmaxIt = 4
+precfill = 2
+prectol = 1e-2
+precdropTol = 1e-8
+precgamma = 1.0
+preciter = false
+preclumpingM = false
+preclumpingA = false
+
+

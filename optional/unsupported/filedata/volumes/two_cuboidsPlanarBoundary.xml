@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created by G+Smo 0.8.1alpha-->
+<xml>
+ <Geometry type="TensorBSpline3" id="0">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">
+1/2 2/5 -20/19
+25531/11310 19/50 -1 
+166145975/335151126 347616508/167575563 -174890500/167575563
+2 9/5 -1 
+0 0 0
+1 0 0
+0 1 0
+1 1 -41/300
+</coefs>
+ </Geometry>
+ <Geometry type="TensorBSpline3" id="1">
+  <Basis type="TensorBSplineBasis3">
+   <Basis type="BSplineBasis" index="0">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="1">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+   <Basis type="BSplineBasis" index="2">
+    <KnotVector degree="1">0 0 1 1 </KnotVector>
+   </Basis>
+  </Basis>
+  <coefs geoDim="3">
+0 0 0
+1 0 0
+0 1 0
+1 1 -41/300
+1/3 1/6 1
+2434479/1492939 1283967/8104526 3851901/4052263
+1/3 1256705/1131552 1
+12/7 9/8 18/19
+</coefs>
+ </Geometry>
+ <MultiPatch parDim="3" id="2">
+  <patches type="id_range">0 1</patches>
+  <interfaces>1 5 0 6 0 1 2 1 1 1
+</interfaces>
+  <boundary>1 6
+1 3
+1 2
+1 1
+1 4
+0 5
+0 4
+0 3
+0 2
+0 1
+</boundary>
+ </MultiPatch>
+</xml>
+

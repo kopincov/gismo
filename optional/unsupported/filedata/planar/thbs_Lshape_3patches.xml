@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+L-Shaped geometry in the bounding box [0,6]x[0,6]
+consisting of 3 square patches.
+
+THB-Splines of degree 2.
+
+WARNING:
+Does not contain interface and boundary
+information yet. 
+Must run call gsMultiPatch::computeTopology() 
+before using this geometry for PDEs.
+-->
+<xml>
+ <Geometry type="THBSpline2" id="0">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.5 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 0.5 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">0 0 
+1 0 
+2 0 
+3 0
+0 1 
+1 1 
+2 1 
+3 1 
+0 2 
+1 2 
+2 2 
+3 2 
+0 3 
+1 3 
+2 3
+3 3
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="1">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.5 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 0.5 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">3 0 
+4 0 
+5 0 
+6 0
+3 1 
+4 1 
+5 1 
+6 1 
+3 2 
+4 2 
+5 2 
+6 2 
+3 3 
+4 3 
+5 3
+6 3
+</coefs>
+ </Geometry>
+ <Geometry type="THBSpline2" id="2">
+  <Basis type="THBSplineBasis2">
+   <Basis type="TensorBSplineBasis2">
+    <Basis type="BSplineBasis" index="0">
+     <KnotVector degree="2">0 0 0 0.5 1 1 1 </KnotVector>
+    </Basis>
+    <Basis type="BSplineBasis" index="1">
+     <KnotVector degree="2">0 0 0 0.5 1 1 1 </KnotVector>
+    </Basis>
+   </Basis>
+  </Basis>
+  <coefs geoDim="2">0 3 
+1 3
+2 3 
+3 3
+0 4 
+1 4 
+2 4 
+3 4 
+0 5 
+1 5 
+2 5 
+3 5 
+0 6 
+1 6 
+2 6
+3 6
+</coefs>
+ </Geometry>
+<MultiPatch parDim="2" id="0">
+ <patches type="id_range">0 2</patches>
+</MultiPatch>
+</xml>
+

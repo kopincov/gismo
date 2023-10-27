@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<Pde type="PoissonPde" dim="2">
+<rhs>0</rhs>
+</Pde>
+<Function type="FunctionExpr" id="100" dim="2">exp(x)*sin(y)</Function>
+</xml>

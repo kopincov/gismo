@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- this example is for domain (-1,1) !
+S. Moore
+-->
+<xml>
+<Pde type="PoissonPde" dim="3">
+<rhs> ( pi* sin(pi*x) * sin(pi*y) ) *( cos(pi*z) + 2 * pi*sin(pi*z) ) </rhs>
+</Pde>
+<Function type="FunctionExpr" id="100" dim="3">sin(pi*x) * sin(pi*y) * sin(pi*z)</Function>
+</xml>
